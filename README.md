@@ -84,7 +84,7 @@ Need I say more?
 
 ---
 
-For curators looking for this tool.. lets dive in.
+For playlist curators looking to use this tool.. let's dive in.
 
 The Automator
 -------------
@@ -138,7 +138,7 @@ Make sure to first have Python installed on your machine, along with the relevan
 - Fill in `frequency` in minutes. The value here is the time interval between each check. I suggest at least 1 min because even though the frontend will get updated almost instantly, the API takes about that long to update. Not that this is a big issue, but it could skew the data being written in the CSV file.
 
 ### 3. Provide cover images
-- Drop all the relevant image files in the "playlist_cover_images" directory.
+Drop all the relevant image files in the "playlist_cover_images" directory. Make sure the size of each image file is not more than 180kb or you might get a 413 error.
 
 ### 4. Authorize App
 - Run [oauth.py](oauth.py) in your terminal / cmd.
@@ -164,4 +164,8 @@ It's a little different for the cover image because a default image is still dis
 
 Help / Contact
 --------------
-If you need help getting things set up or find any bugs, do create an issue or reach me directly at my Twitter or Discord, both of which you can find [here](https://github.com/jeremyngcode/jeremyngcode).
+If you need help getting things set up or find any bugs, do create an issue or reach out to me directly at my Twitter or Discord, both of which you can find [here](https://github.com/jeremyngcode/jeremyngcode).
+
+Extras
+------
+If you're an artist on Spotify, you might also be interested in checking out a [dashboard](https://github.com/jeremyngcode/Spotify-Graphs-Dashboard) I built for visualizing your streams.
