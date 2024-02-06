@@ -56,7 +56,9 @@ If you try hard enough with Spotify support, you may get a chance to get your pl
 
 ![playlist-whitelist](https://github.com/Codecademy/docs/assets/156220343/be667cbc-dbf4-4df7-a2b1-816581777210)
 
-I have just tried reporting my own playlist as I'm typing this, and I can confirm this works at least. I also tested if the "immunity" remains if you add new tracks, and it does remain.
+I have just tried reporting my own playlist as I'm typing this, and I can confirm that this works at least. I also tested if the "immunity" remains if you add new tracks, and it does remain.
+
+As a playlist curator, this is probably the best help you can get from Spotify.
 
 ### Current Solution (*Somewhat*)
 It's hardly surprising to know that automation scripts have since been written to combat this problem. If you didn't manage to persuade Spotify to whitelist your playlist or if you need to change your playlist title / image cover frequently for whatever reason, then scripts can help to reupdate the playlists with the relevant meta info.
@@ -98,8 +100,7 @@ In addition, there are two more features my script does:
    2023-11-20,04:11:05,spotify:playlist:123456789abcdefghijklm,TITLE
    2023-11-20,04:12:05,spotify:playlist:123456789abcdefghijklm,COVER IMAGE
    ```
-
-This is so you can document and see for yourself how often your playlists are being reported. Also, and I'm not sure if this makes sense, but perhaps the community could then come together to publish the results into one database, so that everyone will know what kind of damage Spotify is refusing to fix.
+   This is so you can document and see for yourself how often your playlists are being reported. Also, and I'm not sure if this makes sense, but perhaps the community could then come together to publish the results into one database, so that everyone will know what kind of damage Spotify is refusing to fix.
 
 Getting Started
 ---------------
@@ -149,7 +150,7 @@ Make sure to first have Python installed on your machine, along with the relevan
 The access token expires in 60 mins, but you will not have to worry about this as I have coded it in such a way that it will refresh whenever required.
 
 ### 5. Begin Automation
-When you're ready, run the [Automator.py](Automator.py) script. You should notice a new output file "data.csv" in the working directory. If you're running this from cmd, press `ctrl + c` to exit the process.
+When you're ready, run the [Automator.py](Automator.py) script. You should notice a new output file "data.csv" in the working directory. If you're running this from cmd, press `CTRL+C` to exit the process.
 
 I suggest testing the script with a dummy playlist first to ensure everything is working correctly. Try reporting your own playlists as well.
 
