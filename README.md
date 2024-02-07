@@ -34,7 +34,7 @@ To my knowledge, this has been an ongoing issue for at least 4+ years, and has e
 - More recently, they have included a checkbox where you'd have to acknowledge that you could get your account suspended for false reporting. This one is funny because **you don't need a Spotify account to report any playlist.**
 - Choosing the "I just don't like it" option as a reason for reporting no longer works, whereas any reason you selected used to work.
 
-That's pretty much it, or at least from what I'm aware of. No where near solving the problem.
+That's pretty much it, or at least from what I'm aware of. Nowhere near solving the problem.
 
 As of now, you can make somewhere between 5-10 consecutive reports before Spotify prevents you from further doing so for a certain timeframe. But anyone can create a new email account on the spot, so this mitigation is almost as good as useless.
 
