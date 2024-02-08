@@ -103,5 +103,5 @@ def add_custom_playlist_cover_image(playlist_id, img_filename):
 		if response.status_code == 202:
 			print('[202 ACCEPTED - IMAGE UPLOADED]')
 		else:
-			print(f'[{response.status_code} {response.reason}]')
+			custom_printer.pprint(response.json())
 	print('-' * 100)

@@ -121,7 +121,12 @@ def retrieve_token_info():
 
 # -------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
-	get_user_authorization('playlist-modify-public', 'ugc-image-upload')
+	scopes = (
+		'playlist-modify-public',
+		'ugc-image-upload'
+	)
+
+	get_user_authorization(*scopes)
 
 	try:
 		auth_code = input('Enter authorization code: ')
