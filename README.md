@@ -54,7 +54,7 @@ Also, one would think that they would at least review reports made on "higher st
 ### Whitelisting
 If you try hard enough with Spotify support, you may get a chance to get your playlist [whitelisted](https://community.spotify.com/t5/Live-Ideas/Playlists-Solution-to-false-abusive-reporting/idc-p/5629154/highlight/true#M267588), or "immune" from these false reports.
 
-![playlist-whitelist](https://github.com/Codecademy/docs/assets/156220343/be667cbc-dbf4-4df7-a2b1-816581777210)
+![playlist-whitelist](https://github.com/jeremyngcode/Spotify-Playlist-Updater/assets/156220343/7db13446-f85a-4aea-a8aa-59378bb4a2a7)
 
 I have just tried reporting my own playlist as I'm typing this, and I can confirm that this works at least. I also tested if the "immunity" remains if you add new tracks, and it does remain.
 
