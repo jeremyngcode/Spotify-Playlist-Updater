@@ -129,16 +129,16 @@ Make sure to first have Python installed on your machine, along with the relevan
   ```py
   # Example
   playlist1 = Playlist(spotify_id='22characters-long-here',
-    title='My Amazing Playlist Title - But keeps disappearing!',
-    description='My favourite sleepy music',
-    img_filename="sexy-penguin.jpg"
+      title='My Amazing Playlist Title - But keeps disappearing!',
+      description='My favourite sleepy music',
+      img_filename="sexy-penguin.jpg"
   )
   ```
   The script will update your playlist based on the info you've provided here. You can monitor multiple playlists, just repeat the above code and make sure to include all of them in the `playlists_for_automation` list.
 - Fill in `frequency` in minutes. The value here is the time interval between each check. I suggest at least 1 min because even though the frontend will get updated almost instantly, the API takes about that long to update. Not that this is a big issue, but it could skew the data being written in the CSV file.
 
 ### 3. Provide cover images
-Drop all the relevant image files in the "playlist_cover_images" directory. Make sure the size of each image file is not more than 180kb or you might get a 413 error.
+Drop all the relevant image files in the [playlist_cover_images](playlist_cover_images) directory. Make sure the size of each image file is not more than 180kb or you might get a 413 error.
 
 ### 4. Authorize App
 - Run [oauth.py](oauth.py) in your terminal / cmd.
