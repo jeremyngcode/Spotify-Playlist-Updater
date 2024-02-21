@@ -109,12 +109,12 @@ Make sure to first have Python installed on your machine, along with the relevan
 ### 1. Create App
 - Login to [Spotify for Developers](https://developer.spotify.com) and click on 'Create app' in your dashboard.
 - Fill in required fields:
-  1. App name (can be anything)
-  2. App description (can be anything)
-  3. Redirect URI: http://localhost:8080/callback
+	1. App name (can be anything)
+	2. App description (can be anything)
+	3. Redirect URI: http://localhost:8080/callback
 - Go to your newly created app settings and note the following:
-  1. Client ID
-  2. Client Secret
+	1. Client ID
+	2. Client Secret
 
 ### 2. Configure [settings.py](settings.py)
 - Fill in your `CLIENT_ID` and `CLIENT_SECRET`:
