@@ -129,9 +129,9 @@ Make sure to first have Python installed on your machine, along with the relevan
   ```py
   # Example
   playlist1 = Playlist(spotify_id='22characters-long-here',
-	title='My Amazing Playlist Title - But keeps disappearing!',
-	description='My favourite sleepy music',
-	img_filename="sexy-penguin.jpg"
+    title='My Amazing Playlist Title - But keeps disappearing!',
+    description='My favourite sleepy music',
+    img_filename="sexy-penguin.jpg"
   )
   ```
   The script will update your playlist based on the info you've provided here. You can monitor multiple playlists, just repeat the above code and make sure to include all of them in the `playlists_for_automation` list.
@@ -144,7 +144,7 @@ Drop all the relevant image files in the "playlist_cover_images" directory. Make
 - Run [oauth.py](oauth.py) in your terminal / cmd.
 - In the opened web browser, login to your Spotify account if you haven't already.
 - Click 'Agree' to grant the relevant access permissions to your app. 
-- In the address bar, copy everything after `code=` and paste it in the terminal.
+- In the address bar, copy everything after `code=` and paste it into the terminal.
 - Hit enter. If all went well, you should see your token details printed.
 
 The access token expires in 60 mins, but you will not have to worry about this as I have coded it in such a way that it will refresh whenever required.
