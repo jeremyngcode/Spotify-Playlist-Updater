@@ -17,13 +17,13 @@ from functions import (
 
 # Create a csv data file for writing the result of each check
 data_file = path.join(path.dirname(__file__), "data.csv")
-column_names = ['date', 'time', 'spotify uri', 'reported?']
+headers = ['date', 'time', 'spotify uri', 'reported?']
 
 if not path.exists(data_file):
 	print('Creating data file..\n')
 
 	with open(data_file, 'w', newline='') as f:
-		dictwriter = csv.DictWriter(f, fieldnames=column_names)
+		dictwriter = csv.DictWriter(f, fieldnames=headers)
 		dictwriter.writeheader()
 
 # The interval between each check in seconds
@@ -45,41 +45,41 @@ while True:
 				sys.exit()
 
 			row = {
-				'date': now.strftime('%Y-%m-%d'),
-				'time': now.strftime('%H:%M:%S'),
-				'spotify uri': data['uri'],
-				'reported?': ''
+				headers[0]: now.strftime('%Y-%m-%d'),
+				headers[1]: now.strftime('%H:%M:%S'),
+				headers[2]: data['uri'],
+				headers[3]: ''
 			}
 
 			# Checks for a blank title and updates accordingly
 			if all((playlist.title, not data['name'])):
-				row['reported?'] += 'TITLE + '
+				row[headers[3]] += 'TITLE + '
 				change_playlist_details(playlist.spotify_id,
 					name=playlist.title
 				)
 
 			# Checks for a blank description and updates accordingly
 			if all((playlist.description, not data['description'])):
-				row['reported?'] += 'DESCRIPTION + '
+				row[headers[3]] += 'DESCRIPTION + '
 				change_playlist_details(playlist.spotify_id,
 					description=playlist.description
 				)
 
 			# Checks for a default cover image and updates accordingly
 			if all((playlist.img_filename, data['images'][0]['height'])):
-				row['reported?'] += 'COVER IMAGE + '
+				row[headers[3]] += 'COVER IMAGE + '
 				add_custom_playlist_cover_image(playlist.spotify_id,
 					img_filename=playlist.img_filename
 				)
 
-			if not row['reported?']:
-				row['reported?'] = 'OK'
+			if not row[headers[3]]:
+				row[headers[3]] = 'OK'
 			else:
-				row['reported?'] = row['reported?'][:-3]
+				row[headers[3]] = row[headers[3]][:-3]
 
 			print('Writing data..')
 			with open(data_file, 'a', newline='') as f:
-				dictwriter = csv.DictWriter(f, fieldnames=column_names)
+				dictwriter = csv.DictWriter(f, fieldnames=headers)
 				dictwriter.writerow(row)
 
 			print('[WRITING COMPLETE]')
