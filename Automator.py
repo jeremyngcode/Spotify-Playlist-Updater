@@ -42,7 +42,7 @@ while True:
 			now = datetime.now()
 
 			if not data:
-				sys.exit()
+				continue
 
 			row = {
 				headers[0]: now.strftime('%Y-%m-%d'),
