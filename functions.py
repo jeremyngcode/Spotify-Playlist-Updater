@@ -1,4 +1,3 @@
-import json
 import base64
 from os import path
 import requests
@@ -62,7 +61,7 @@ def change_playlist_details(playlist_id,
 	print(f'change_playlist_details({playlist_id}):')
 	try:
 		response = requests.put(
-			url, headers=headers, data=json.dumps(data), timeout=5
+			url, headers=headers, json=data, timeout=5
 		)
 	except Timeout:
 		print('[UNSUCCESSFUL REQUEST - Timed out..]')
