@@ -169,3 +169,7 @@ If you need help getting things set up or find any bugs, do create an issue or r
 Extras
 ------
 If you're an artist on Spotify, you might also be interested in checking out a [dashboard](https://github.com/jeremyngcode/Spotify-Graphs-Dashboard) I built for visualizing your streams.
+
+Updates
+-------
+**2024-08-06:** Just tested reporting one of my own playlists with "deceptive" content for title and cover image today. Seems like neither was taken down. Maybe / hopefully Spotify has finally fixed this issue.
